@@ -263,6 +263,5 @@ func (s *Stream) Run() error {
 			<-hook.done
 		}()
 	}
-	return s.
-	.Run()
+	return s.Compile().Run()
 }
