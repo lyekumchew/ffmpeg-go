@@ -249,7 +249,6 @@ func (s *Stream) Compile() *exec.Cmd {
 	if a, ok := s.Context.Value("Stderr").(io.Writer); ok {
 		cmd.Stderr = a
 	}
-	log.Printf("compiled command: ffmpeg %s\n", strings.Join(args, " "))
 	return cmd
 }
 
@@ -264,5 +263,6 @@ func (s *Stream) Run() error {
 			<-hook.done
 		}()
 	}
-	return s.Compile().Run()
+	return s.
+	.Run()
 }
